@@ -630,6 +630,10 @@ height: 80px;
   background-color: #404bbf; 
   border: none;
 }
+
+.is-hidden{
+  padding: 72px 24px 24px 24px;
+}
 .modal-icon{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -673,15 +677,25 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-caption{
   display: block;
+  text-align: center;
   margin-bottom: 16px;
   margin-top: 72px;
+  font-weight: 500; 
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primari-text-color);
+
 }
 
 .modal-form-field{
   position: relative;
-  margin-bottom: 8px;
+
 }
 
+.modal-form-container{
+  margin-bottom: 8px;
+}
 
 
 .modal-form-input{
@@ -726,16 +740,22 @@ border-radius: 4px;
 border: 1px solid  rgba(46, 47, 66, 0.40);
 }
 .modal-form-label{
+  display: block;
+  margin-bottom: 4px;  
   color: #8E8F99;
 font-size: 12px;
 font-weight: 400;
-line-height: 14px;
-letter-spacing: 0.48px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: var(--lightslate);
+
+
 }
 
 .modal-textarea-container{
   display: flex;
   flex-direction: column;
+
 
 }
 .modal-textarea:focus{
@@ -831,4 +851,8 @@ color: var(--accent);
 .email-foot-icon{
   margin-left: 16px; 
 
+}
+
+.subscribe-text{
+  margin-bottom: 16px; 
 }

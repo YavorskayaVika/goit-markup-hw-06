@@ -780,10 +780,8 @@ color: var(--lightslate);
 
 /* Checkbox */
 .modal-form-agreement{
-  display: flex;
-  align-items: center;
+  display: block;
   gap: 8px;
-  margin-top: 16px;
   font-size: 12px;
   line-height: 1.17; 
   letter-spacing: 0.04em; 
@@ -920,7 +918,7 @@ color: var(--accent);
 }
 
 .modal-form-agreement-checkbox:checked + .modal-form-agreement .modal-form-agreement-desc {
-  background-color: var(--color-input)
+  background-color: var(--color-input);
   border: none;
   fill: var(--accent-two);
 }

@@ -455,6 +455,7 @@ height: 80px;
 .footer-box{
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
  /* Portfolio */
@@ -678,13 +679,12 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-caption{
   display: block;
   text-align: center;
-  margin-bottom: 16px;
-  margin-top: 72px;
   font-weight: 500; 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primari-text-color);
+  margin-bottom:16px ;
 
 }
 
@@ -769,6 +769,7 @@ color: var(--lightslate);
 .modal-textarea-container{
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px 
 
 
 }
@@ -785,11 +786,9 @@ color: var(--lightslate);
   font-size: 12px;
   line-height: 1.17; 
   letter-spacing: 0.04em; 
-
-
-
-
+  color: var(--lightslate);
 }
+
 .modal-form-agreement-checkbox{
   appearance: none;
   width: 16px;
@@ -881,6 +880,7 @@ color: var(--accent);
 
 .email-foot-icon{
   margin-left: 16px; 
+  fill: #FFF;
 
 }
 
@@ -911,12 +911,15 @@ color: var(--accent);
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  gap: 10px;
+  background-color: var(--accent);
   transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 
+}
 
-
-
-
-
-
+.modal-form-agreement-checkbox:checked + .modal-form-agreement .modal-form-agreement-desc {
+  background-color: var(--accent);
+  border: none;
+  fill: var(--accent-two)
 }
